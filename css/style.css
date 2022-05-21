@@ -1,0 +1,321 @@
+    /* ----------------------  FORSIDE KNAPPER STYLING -------------------------- */
+*{
+    font-family: abel;
+}
+.page-width {
+  *zoom: 1;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;}
+  .page-width::after {
+    content: '';
+    display: table;
+    clear: both; 
+}
+.forsidekanpper-div{
+  width: 100%;
+}
+.forsideknapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 55px;
+  text-transform: uppercase;
+  text-align: center;
+  height: 140px;
+  justify-content: space-between;
+}
+  @media only screen and (max-width: 749px){
+    .forsideknapper{
+      flex-direction: column;
+      height: auto;
+    }
+  }
+  @media only screen and (min-width: 749px) and (max-width: 1024px){
+    .forsideknapper{
+      transform: none;
+      filter: none;
+      flex-flow: wrap;
+      height: auto;
+      width: 90%;
+      margin: auto;
+    }
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1366px){
+    .forsideknapper{
+      transform: none;
+      filter: none;
+      flex-flow: nowrap;
+      width: 100%;
+      margin: auto;
+      padding: 0 20px;
+    }
+  }
+.forsideknap{
+  width: 230px;
+  height: 130px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  transition: .1s cubic-bezier(.44,.13,.48,.87);
+}
+.forsideknap:hover{
+  transform: scale(1.1);
+  filter: opacity(0.7);  
+}
+  @media only screen and (max-width: 749px){
+    .forsideknap:hover{
+      transform: none;
+      filter: none;
+    }
+  }
+  @media only screen and (min-width: 749px) and (max-width: 1024px){
+    .forsideknap:hover{
+      transform: none;
+      filter: none;
+    }
+  }
+  @media only screen and (min-width: 1024px) and (max-width: 1366px){
+    .forsideknap:hover{
+      transform: none;
+      filter: none;
+    }
+  }
+.forsideknapper-img {
+  width: 50px;
+  margin: auto;
+}
+
+/*----------------------- Footer ------------------------------- */
+.my-footer_btn:hover:before {
+  filter: blur(1px);
+  opacity: .6;
+}
+/* --- Trustpilot background --- */
+.my-footer_btn_1:before {
+  content: "";
+  background-image: url('https://cdn.shopify.com/s/files/1/0550/9405/0977/files/trustpilot-background.jpg?v=1651831038');
+  background-position-y: -155px;
+  background-repeat: no-repeat;
+}
+/* --- Newsletter background --- */
+.my-footer_btn_2:before {
+  content: "";
+  background-image: url('https://cdn.shopify.com/s/files/1/0550/9405/0977/files/tengill.jpg?v=1651828404');
+  background-position-y: -20px;
+  background-repeat: no-repeat;
+  background-size: 345px!important;
+  background-position-x: -12px;
+}
+/* --- Who are Debelmose? background --- */
+.my-footer_btn_3:before {
+  content: "";
+  background-image: url('https://cdn.shopify.com/s/files/1/0550/9405/0977/files/247646222_200705538872957_6889752663384697168_n.jpg?v=1651828226');
+  background-position-x: -47px;
+  background-size: 345px!important;
+  background-repeat: no-repeat;
+  background-position-y: -80px;
+}
+/* --- SoMe background --- */
+.my-footer_btn_4:before {
+  content: "";
+  background-image: url('https://cdn.shopify.com/s/files/1/0550/9405/0977/files/273308252_266513945625449_4792242007606903893_n.jpg?v=1651830328');
+  background-position-y: -115px;
+  background-repeat: no-repeat;
+}
+.my-footer_btn{
+  height: 150px;
+  width: 270px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin: auto;
+}
+.my-footer_btn:before {
+  position: absolute;
+  background-size: cover;
+  z-index: 0;
+  opacity: .3;
+  height: 150px;
+  width: 270px;
+  display: block;
+  transition: .1s cubic-bezier(.44,.13,.48,.87);
+  border: 1px solid #707070;
+}
+@media only screen and (max-width: 749px){
+  .my-footer_btn:before {
+    opacity: .3 !important;
+  }
+}
+.my-footer_btn_text{
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #000 !important;
+  text-shadow: 1px 1px 4px rgb(255 255 255);
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.my-footer_btn_text-some{
+  text-align: center;
+  position: relative;
+  color: #000 !important;
+  text-shadow: 1px 1px 4px rgb(255 255 255);
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0 auto !important;
+}
+.trustpilot-widget{
+  margin-top: 10px;
+}
+.trustpilot-logo{
+  width: 180px;
+  margin: 0 auto;
+  display: block;
+}
+.trustpilot-content{
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.some-content{
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 52%;
+  -ms-transform: translateY(-52%);
+  -webkit-transform: translateY(-52%);
+  transform: translateY(-52%);
+}
+.some_section{
+  text-align: center;
+  margin-top: 10px;
+  position: relative;
+}
+@media only screen and (max-width: 749px){
+  .some_section{
+    justify-content: center;
+    margin-bottom: 30px;}
+}
+.some_icon_fb, .some_icon_insta {
+  background-color: #DCBA7F;
+  padding: 4px;
+  border-radius: 7px;
+}
+.some_icon_fb:hover, .some_icon_insta:hover, .trustpilot-btn:hover {
+  filter: drop-shadow(1px 3px 4px #707070);
+}
+.some_icon_fb{
+  width: 40px;
+  margin-right: 20px;
+}
+.some_icon_insta{
+  width: 40px;
+}
+.payment-logo{
+  width: 35px;
+  padding: 1px;
+}
+.payment-logos{
+ margin-top: 7px; 
+}
+.topline_footer{
+  background: -webkit-linear-gradient(100deg, #CEAC68, #F5D3A8, #CEAC68, #F5D3A8, #CEAC68);	
+  width: 100%;
+  height: 1px;
+  margin: 0;
+}
+@media only screen and (max-width: 749px){
+	.topline_footer{
+      margin: 0;
+  }
+}
+.whitespace{
+	width: 100%;
+  	height: 20px;
+}
+@media only screen and (max-width: 749px){
+  	.whitespace{
+      height: 10px;
+	}
+}
+.my-footer{
+  	display: flex;
+	width: 100%;
+  	height: auto;
+  	justify-content: space-around;
+  	flex-direction: row;
+  	margin-bottom: 30px;
+  	flex-flow: wrap;
+    gap: 20px 5px;
+}
+@media only screen and (max-width: 749px){
+  	.my-footer{
+    	flex-direction: column;
+      	height: auto;
+     	align-items: center;
+      	text-align: center;
+  }
+}
+.my-footer1{
+    display: flex;
+	width: 80%;
+  	height: auto;
+  	justify-content: space-between;
+  	flex-direction: row;
+  	margin: 0 auto 30px auto;
+}
+@media only screen and (max-width: 749px){
+  	.my-footer1{
+    	flex-direction: column;
+      	height: auto;
+     	align-items: center;
+      	text-align: center;
+  } 
+}
+@media only screen and (min-width: 749px) and (max-width: 1025px){
+  	.my-footer1{
+    	display: flex;
+    	width: 85%;
+    	height: auto;
+    	justify-content: space-between;
+    	flex-direction: row;
+    	margin: 0 auto 30px;
+    	gap: 30px;
+    	inline-size: fit-content;
+  }
+}
+.my-footer__item{
+	max-width: 300px; 
+  	max-height: 300px;
+}
+@media only screen and (max-width: 749px){
+  	.my-footer__item{
+  		padding-top: 10px !important;
+       	padding-bottom: 10px;
+      	width: 300px;
+  	}
+  	.my-footer__item:last-child{
+      	border-bottom: 0;
+  }
+}
+@media only screen and (max-width: 749px){
+	.my-footer__item_line{
+  		border-bottom: 1px solid #ceac68;
+  }
+}
+.my-small-footer{
+	padding: 0 0;
+	background: -webkit-linear-gradient(100deg, #CEAC68, #CEAC68, #F5D3A8, #CEAC68, #F5D3A8, #CEAC68, #CEAC68);
+}
+@media only screen and (max-width: 749px){
+   	.my-small-footer{	
+      	padding: 20px 0;
+  }
+}
